@@ -15,7 +15,8 @@ externals are or will be converted to use the bcm2835 library, since wiringpi is
 
  
 ## gate outputs: cm_output
-inlet: sending < 1 > turns the gate on, sending < 0 > off; the creation arguments gives the pin number, where GPIO_num = 12, 16, or 26.
+inlet: sending < 1 > turns the gate on, sending < 0 > off; the creation arguments gives the pin number, where 
+- GPIO_num = 12, 16, or 26.
 ```
    |   
    |   
@@ -27,31 +28,31 @@ inlet: sending < 1 > turns the gate on, sending < 0 > off; the creation argument
 
 ## gate/button/nav-button inputs: cm_input
 where:
-GPIO_num = 22, 6, 5, 13 (up, down, left, right)
-GPIO_num = 4, 17, 35 (trig 1-3)
-GPIO_num = 23, 24, 25 (btn 1-3) 
+- GPIO_num = 22, 6, 5, 13 (up, down, left, right)
+- GPIO_num = 4, 17, 35 (trig 1-3)
+- GPIO_num = 23, 24, 25 (btn 1-3) 
 outputs bang.
 ```
- ****************
- * cm_switch 23 *
- *---********---*
-   |          |   
-   |          |   
-   |          |  
+ ***************
+ * cm_input 17 *
+ *---***********
+   |
+   |
+   |
 ```
 
 ## switch inputs (alternative): cm_switch
 the external is applicaple to the same inputs as the cm_input one.
 
-left outlet: puts out the time the switch is held down for (once it's released, in milliseconds).
-right outlet: push = < 1 > / release = < 0 >.
+- left outlet: puts out the time the switch is held down for (once it's released, in milliseconds).
+- right outlet: push = < 1 > / release = < 0 >.
 ```
- ***************
- * cm_input 17 *
- *---***********
-   |   
-   |   
-   | 
+ ****************
+ * cm_switch 23 *
+ *---********---*
+   |          |
+   |          |
+   |          |
 ```
 
 ====================================================================================
