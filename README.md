@@ -3,8 +3,13 @@
 
 
 ```
-this should be code
-asdfasfdasfd
+
+  |
+  |
+ *-*************
+ * cm_input 23 *
+ ***************
+
 ```
 
 
