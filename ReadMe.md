@@ -16,7 +16,8 @@ externals are or will be converted to use the bcm2835 library, since wiringpi is
  
 ## gate outputs: cm_output
 inlet: sending < 1 > turns the gate on, sending < 0 > off; the creation arguments gives the pin number, where 
-- GPIO_num = 12, 16, or 26.
+- GPIO_num = 12, 16 (Gate OUT 1 & 2)
+- GPIO_num = 26 (LED near Button3)
 ```
    |   
    |   
@@ -25,6 +26,7 @@ inlet: sending < 1 > turns the gate on, sending < 0 > off; the creation argument
  * cm_output 23 *
  ****************
 ```
+
 
 ## gate/button/nav-button inputs: cm_input
 where:
@@ -41,6 +43,7 @@ outputs bang.
    |
 ```
 
+
 ## switch inputs (alternative): cm_switch
 the external is applicaple to the same inputs as the cm_input one.
 
@@ -54,6 +57,7 @@ the external is applicaple to the same inputs as the cm_input one.
    |          |
    |          |
 ```
+
 
 ====================================================================================
 
